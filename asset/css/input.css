@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@source "./*.{html,js}";
+@plugin "daisyui";{
+    themes: all;
+  }
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";  
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+@layer base {
+  @font-face {
+    font-family: "mc_reg";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/asset/font/mc_reg.otf") format("woff2");
+  }
+  @font-face {
+    font-family: "mc_italic";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/asset/font/mc_italic.otf") format("woff2");
+  }
+  @font-face {
+    font-family: "mc_bold";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/asset/font/mc_bold.otf") format("woff2");
+  }
+  @font-face {
+    font-family: "mc_bold_italic";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/asset/font/mc_bold_italic.otf") format("woff2");
+  }
+}
+
+@theme {
+  --font-mc-reg: "mc_reg", sans-serif;
+  --font-mc-italic: "mc_italic", sans-serif;
+  --font-mc-bold: "mc_bold", sans-serif;
+  --font-mc-bold-italic: "mc_bold_italic", sans-serif;
+}

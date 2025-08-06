@@ -1,0 +1,1125 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dokumentasi</title>
+    <link rel="stylesheet" href="asset/css/output.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+
+    <button
+      data-drawer-target="logo-sidebar"
+      data-drawer-toggle="logo-sidebar"
+      aria-controls="logo-sidebar"
+      type="button"
+      class="fixed start-3 top-2 z-50 inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:ring-2 focus:ring-gray-200 focus:outline-none sm:hidden dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+    >
+      <span class="sr-only">Open sidebar</span>
+      <svg
+        class="h-6 w-6"
+        aria-hidden="true"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          fill-rule="evenodd"
+          d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"
+        ></path>
+      </svg>
+    </button>
+
+    <aside
+      id="logo-sidebar"
+      class="fixed top-0 left-0 z-40 h-screen w-64 -translate-x-full transition-transform sm:translate-x-0"
+      aria-label="Sidebar"
+    >
+      <div class="h-full overflow-y-auto bg-gray-50 px-3 py-4 dark:bg-gray-800">
+        <a href="#" class="mb-5 flex items-center ps-2.5">
+          <img
+            src="asset/img/fr.jpg"
+            class="me-3 ml-16 h-8 rounded-2xl sm:h-7"
+            alt="Logo"
+          />
+          <span
+            class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+          ></span>
+        </a>
+        <ul class="space-y-2 font-medium">
+          <li>
+            <a
+              href="#about"
+              class="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+            >
+              <svg
+                class="h-5 w-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 22 21"
+              >
+                <path
+                  d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z"
+                />
+                <path
+                  d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z"
+                />
+              </svg>
+              <span class="ms-3">About</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#loginpage"
+              class="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+            >
+              <svg
+                class="h-5 w-5 shrink-0 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 18 18"
+              >
+                <path
+                  d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z"
+                />
+              </svg>
+              <span class="ms-3 flex-1 whitespace-nowrap"
+                >Custom Loginpage</span
+              >
+            </a>
+          </li>
+          <li>
+            <a
+              href="#mayuni"
+              class="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+            >
+              <svg   fill="currentColor"
+                aria-hidden="true"
+                class="h-7 w-7 shrink-0 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 260">
+  <path d="M20,240V80H50V200L100,130H120L170,200V80H200V240H170V140L120,210H100L50,140V240Z"/>
+</svg>
+
+              <span class="ms-3 flex-1 whitespace-nowrap"
+                >Integrasi Mayuni</span
+              >
+            </a>
+          </li>
+          <li>
+            <a
+              href="#vpscuy"
+              class="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+            >
+              <svg
+                fill="currentColor"
+                aria-hidden="true"
+                class="h-5 w-5 shrink-0 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Ubuntu</title>
+                <path
+                  d="M17.61.455a3.41 3.41 0 0 0-3.41 3.41 3.41 3.41 0 0 0 3.41 3.41 3.41 3.41 0 0 0 3.41-3.41 3.41 3.41 0 0 0-3.41-3.41zM12.92.8C8.923.777 5.137 2.941 3.148 6.451a4.5 4.5 0 0 1 .26-.007 4.92 4.92 0 0 1 2.585.737A8.316 8.316 0 0 1 12.688 3.6 4.944 4.944 0 0 1 13.723.834 11.008 11.008 0 0 0 12.92.8zm9.226 4.994a4.915 4.915 0 0 1-1.918 2.246 8.36 8.36 0 0 1-.273 8.303 4.89 4.89 0 0 1 1.632 2.54 11.156 11.156 0 0 0 .559-13.089zM3.41 7.932A3.41 3.41 0 0 0 0 11.342a3.41 3.41 0 0 0 3.41 3.409 3.41 3.41 0 0 0 3.41-3.41 3.41 3.41 0 0 0-3.41-3.41zm2.027 7.866a4.908 4.908 0 0 1-2.915.358 11.1 11.1 0 0 0 7.991 6.698 11.234 11.234 0 0 0 2.422.249 4.879 4.879 0 0 1-.999-2.85 8.484 8.484 0 0 1-.836-.136 8.304 8.304 0 0 1-5.663-4.32zm11.405.928a3.41 3.41 0 0 0-3.41 3.41 3.41 3.41 0 0 0 3.41 3.41 3.41 3.41 0 0 0 3.41-3.41 3.41 3.41 0 0 0-3.41-3.41z"
+                />
+              </svg>
+              <span class="ms-3 flex-1 whitespace-nowrap">VPS</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#docker"
+              class="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+            >
+              <svg
+                fill="currentColor"
+                aria-hidden="true"
+                class="h-5 w-5 shrink-0 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Docker</title>
+                <path
+                  d="M13.983 11.078h2.119a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.119a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 00.186-.186V3.574a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m0 2.716h2.118a.187.187 0 00.186-.186V6.29a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.887c0 .102.082.185.185.186m-2.93 0h2.12a.186.186 0 00.184-.186V6.29a.185.185 0 00-.185-.185H8.1a.185.185 0 00-.185.185v1.887c0 .102.083.185.185.186m-2.964 0h2.119a.186.186 0 00.185-.186V6.29a.185.185 0 00-.185-.185H5.136a.186.186 0 00-.186.185v1.887c0 .102.084.185.186.186m5.893 2.715h2.118a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m-2.93 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.083.185.185.185m-2.964 0h2.119a.185.185 0 00.185-.185V9.006a.185.185 0 00-.184-.186h-2.12a.186.186 0 00-.186.186v1.887c0 .102.084.185.186.185m-2.92 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.082.185.185.185M23.763 9.89c-.065-.051-.672-.51-1.954-.51-.338.001-.676.03-1.01.087-.248-1.7-1.653-2.53-1.716-2.566l-.344-.199-.226.327c-.284.438-.49.922-.612 1.43-.23.97-.09 1.882.403 2.661-.595.332-1.55.413-1.744.42H.751a.751.751 0 00-.75.748 11.376 11.376 0 00.692 4.062c.545 1.428 1.355 2.48 2.41 3.124 1.18.723 3.1 1.137 5.275 1.137.983.003 1.963-.086 2.93-.266a12.248 12.248 0 003.823-1.389c.98-.567 1.86-1.288 2.61-2.136 1.252-1.418 1.998-2.997 2.553-4.4h.221c1.372 0 2.215-.549 2.68-1.009.309-.293.55-.65.707-1.046l.098-.288Z"
+                />
+              </svg>
+              <span class="ms-3 flex-1 whitespace-nowrap"
+                >Docker Container
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#cloudflare"
+              class="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+            >
+              <svg
+                fill="currentColor"
+                aria-hidden="true"
+                class="h-5 w-5 shrink-0 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Cloudflare</title>
+                <path
+                  d="M16.5088 16.8447c.1475-.5068.0908-.9707-.1553-1.3154-.2246-.3164-.6045-.499-1.0615-.5205l-8.6592-.1123a.1559.1559 0 0 1-.1333-.0713c-.0283-.042-.0351-.0986-.021-.1553.0278-.084.1123-.1484.2036-.1562l8.7359-.1123c1.0351-.0489 2.1601-.8868 2.5537-1.9136l.499-1.3013c.0215-.0561.0293-.1128.0147-.168-.5625-2.5463-2.835-4.4453-5.5499-4.4453-2.5039 0-4.6284 1.6177-5.3876 3.8614-.4927-.3658-1.1187-.5625-1.794-.499-1.2026.119-2.1665 1.083-2.2861 2.2856-.0283.31-.0069.6128.0635.894C1.5683 13.171 0 14.7754 0 16.752c0 .1748.0142.3515.0352.5273.0141.083.0844.1475.1689.1475h15.9814c.0909 0 .1758-.0645.2032-.1553l.12-.4268zm2.7568-5.5634c-.0771 0-.1611 0-.2383.0112-.0566 0-.1054.0415-.127.0976l-.3378 1.1744c-.1475.5068-.0918.9707.1543 1.3164.2256.3164.6055.498 1.0625.5195l1.8437.1133c.0557 0 .1055.0263.1329.0703.0283.043.0351.1074.0214.1562-.0283.084-.1132.1485-.204.1553l-1.921.1123c-1.041.0488-2.1582.8867-2.5527 1.914l-.1406.3585c-.0283.0713.0215.1416.0986.1416h6.5977c.0771 0 .1474-.0489.169-.126.1122-.4082.1757-.837.1757-1.2803 0-2.6025-2.125-4.727-4.7344-4.727"
+                />
+              </svg>
+              <span class="ms-3 flex-1 whitespace-nowrap"
+                >Cloudflare Tunnel</span
+              >
+            </a>
+          </li>
+          <li>
+            <a
+              href="#sslcertificate"
+              class="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+            >
+              <svg
+                fill="currentColor"
+                aria-hidden="true"
+                class="h-5 w-5 shrink-0 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Let's Encrypt</title>
+                <path
+                  d="M11.9914 0a.8829.8829 0 00-.8718.817v3.0209A.8829.8829 0 0012 4.7207a.8829.8829 0 00.8803-.8803V.817a.8829.8829 0 00-.889-.817zm7.7048 3.1089a.8804.8804 0 00-.5214.1742l-2.374 1.9482a.8804.8804 0 00.5592 1.5622.8794.8794 0 00.5592-.2001l2.3714-1.9506a.8804.8804 0 00-.5944-1.534zm-15.3763.0133a.8829.8829 0 00-.611 1.5206l2.37 1.9506a.876.876 0 00.5606.2001v-.002a.8804.8804 0 00.5597-1.5602L4.8277 3.2831a.8829.8829 0 00-.5078-.161zm7.6598 3.2275a5.0456 5.0456 0 00-5.0262 5.0455v1.4876H5.787a.9672.9672 0 00-.9647.9643v9.1887a.9672.9672 0 00.9647.9643H18.213a.9672.9672 0 00.9643-.9643v-9.1907a.9672.9672 0 00-.9643-.9623h-1.1684v-1.4876a5.0456 5.0456 0 00-5.0649-5.0455zm.0127 2.8933a2.1522 2.1522 0 012.1593 2.1522v1.4876H9.8473v-1.4876a2.1522 2.1522 0 012.145-2.1522zm7.3812.5033a.8829.8829 0 10.0705 1.7632h3.0267a.8829.8829 0 000-1.7609H19.444a.8829.8829 0 00-.0705-.0023zm-17.8444.0023a.8829.8829 0 000 1.7609h2.9983a.8829.8829 0 000-1.7609zm10.4596 6.7746a1.2792 1.2792 0 01.641 2.3926v1.2453a.6298.6298 0 01-1.2595 0v-1.2453a1.2792 1.2792 0 01.6185-2.3926z"
+                />
+              </svg>
+              <span class="ms-3 flex-1 whitespace-nowrap">SSL Certificate</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#mikrotik"
+              class="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+            >
+              <svg
+                fill="currentColor"
+                aria-hidden="true"
+                class="h-5 w-5 shrink-0 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>MikroTik</title>
+                <path
+                  d="M23.041 6.188a1.404 1.404 0 0 0-.218-.36c-.24-.296-.634-.586-1.14-.864l-4.052-2.22L13.576.519C13.074.243 12.61.065 12.22.013A1.772 1.772 0 0 0 12 0c-.432 0-.974.192-1.576.52L6.37 2.74 2.317 4.96c-.504.279-.9.569-1.14.867a1.59 1.59 0 0 0-.122.17 1.654 1.654 0 0 0-.096.19c-.15.348-.22.816-.22 1.368v8.887c0 .66.1 1.2.316 1.558.216.356.66.706 1.262 1.036l4.054 2.22 4.053 2.223c.504.276.966.456 1.36.506.145.02.291.02.436 0 .39-.05.852-.228 1.356-.506l8.107-4.443c.6-.33 1.046-.68 1.262-1.036.036-.06.068-.123.096-.188.15-.348.22-.818.22-1.37V7.556c0-.552-.07-1.02-.22-1.368zM7.233 16.618c0 .2-.218.33-.396.233l-1.45-.796a1.066 1.066 0 0 1-.552-.934v-4.296c0-.2.216-.33.394-.235l1.728.947a.53.53 0 0 1 .276.468v4.612zm11.934-1.497c0 .39-.213.748-.554.936l-1.45.794a.266.266 0 0 1-.394-.234v-5.692c0-.2-.217-.33-.395-.232l-2.62 1.434c-.34.187-.552.545-.552.934v5.646a.532.532 0 0 1-.278.468l-.41.224c-.32.176-.707.176-1.026 0l-.408-.224a.532.532 0 0 1-.278-.468v-5.646c0-.389-.212-.747-.552-.934L4.835 9.16v-.28c0-.388.212-.746.552-.934l.6-.328a1.064 1.064 0 0 1 1.022 0l4.48 2.452c.318.176.704.176 1.021 0l2.07-1.134a.266.266 0 0 0 0-.468L9.932 5.922a.266.266 0 0 1 0-.468l1.556-.852c.32-.176.707-.176 1.026 0l6.1 3.34c.342.188.554.547.553.936v6.243z"
+                />
+              </svg>
+              <span class="ms-3 flex-1 whitespace-nowrap">Mikrotik Config</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- end -->
+
+    <!-- open -->
+    <div class="transition-all duration-300 sm:ml-64">
+      <!-- pembungkus untuk memisahkan section sidebar -->
+      <div id="main-content-wrapper">
+        <!-- judul -->
+        <section
+          class="rounded-b-xl bg-gradient-to-r from-sky-100 to-blue-100 p-6 pt-24 text-center shadow"
+        >
+          <h1
+            class="mb-2 text-3xl font-extrabold text-blue-700 drop-shadow md:text-4xl"
+          >
+            Integrasi loginpage Hotspot Mikrotik dengan payment gateway
+          </h1>
+          <a href="#">
+            <img
+              src="asset/img/logo.png"
+              alt="logo"
+              class="mx-auto mb-2 w-20"
+            />
+          </a>
+        </section>
+
+        <section id="about">
+          <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 gap-8 xl:text-center">
+              <div>
+                <div class="mx-auto max-w-lg md:max-w-none">
+                  <h2 class="mb-2 text-2xl font-bold text-blue-600">
+                    Tentang Proyek
+                  </h2>
+                  <p
+                    class="mt-2 text-base leading-relaxed text-gray-700 md:text-lg"
+                  >
+                    Proyek ini bertujuan untuk membuat tampilan login hotspot
+                    Mikrotik yang diintegrasikan dengan payment gateway
+                    <span class="font-semibold text-sky-500">Mayuni</span> untuk
+                    pembelian voucher paket internet dan lainnya.
+                  </p>
+                </div>
+              </div>
+              <div class="grid grid-cols-1 gap-8 text-left sm:grid-cols-2">
+                <div>
+                  <h3 class="mb-2 text-xl font-semibold text-blue-500">
+                    Komponen yang Digunakan
+                  </h3>
+                  <ul
+                    class="list-inside list-disc text-base text-gray-700 md:text-lg"
+                  >
+                    <li>Router Mikrotik</li>
+                    <li>VPS Ubuntu 22.04</li>
+                    <li>Domain Publik</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="mb-2 text-xl font-semibold text-blue-500">
+                    Teknologi yang Digunakan
+                  </h3>
+                  <ul
+                    class="list-inside list-disc text-base text-gray-700 md:text-lg"
+                  >
+                    <li>Node Js (javascript)</li>
+                    <li>Docker Container</li>
+                    <li>Service Cloudflare</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- <section>
+        <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
+          <div
+            class="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8"
+          >
+            <div>
+              <div class="max-w-lg md:max-w-none">
+                <h3 class="mb-2 font-mc-reg text-xl text-blue-500">
+                  mulai dari mana ya?
+                </h3>
+                <h2 class="text-2xl font-semibold text-gray-900 sm:text-3xl">
+                  mungkin mulai dari Topologinya Dulu
+                </h2>
+                <h3 class="mt-5 font-mc-reg">
+                  sederhananya seperti ini gambaran nya
+                </h3>
+
+                <p class="text-base text-gray-700 md:text-lg">
+                  jadi kita punya Router Mikrotik yang terhubung dengan VPS Ubuntu yang digunakan untuk mengambil data-data yang ada di mikrotik melalui api mikrotik menggunakan routerOS-client yang berjalan di docker dan service cloudflare yang digunakan untuk tunnel vps nya supaya bisa di akses di internet
+                </p>
+
+                <p></p>
+              </div>
+            </div>
+
+            <div>
+              <img src="/asset/img/uyfytui.jpg" class="rounded-2xl" alt="" />
+            </div>
+          </div>
+        </div>
+      </section> -->
+      </div>
+
+      <!-- custom loginpage -->
+      <section id="loginpage">
+        <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
+          <div
+            class="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8"
+          >
+            <div>
+              <div class="max-w-lg md:max-w-none">
+                <h1 class="text-xl font-semibold text-gray-900 sm:text-xl">
+                  Membuat custom loginpage hotspot mikrotik
+                </h1>
+                <h2 class="mt-10 font-semibold text-gray-900 sm:text-xl">
+                  langkah pertama tentu saja membuat halaman loginpage hotspot
+                  custom dengan tambahan tampilan untuk membeli voucher internet
+                  dan untuk memilih metode pembayaran yang nanti akan di
+                  integrasikan dengan payment gateway
+                  <span class="text-sky-400">Mayuni</span>, seperti ini
+                  contohnya:
+                </h2>
+
+                <p class="mt-4">
+                  kamu bebas mendesain bagaimanapun bentuk/tampilannya sesuai
+                  keinginan kamu
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <img src="/asset/img/ss.png" class="w-1/2 rounded" alt="" />
+              <img src="/asset/img/ss2.png" class="w-1/2 rounded" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- integrasi mayuni -->
+      <section id="mayuni">
+        <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
+          <div
+            class="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8"
+          >
+            <div>
+              <div class="max-w-lg md:max-w-none">
+                <h2 class="text-xl font-semibold text-gray-900 sm:text-3xl">
+                  Integrasi dengan Payment Gateway
+                  <span class="text-sky-400">Mayuni</span>
+                </h2>
+
+                <p class="mt-4 text-gray-700">
+                  untuk melakukan integrasi dengan payment gateway
+                  <span class="text-sky-400">Mayuni</span> kamu perlu membuat
+                  akun di
+                  <a
+                    href="https://mayuni.co.id"
+                    class="text-sky-400 hover:underline"
+                    >Mayuni.co.id</a
+                  >
+                  untuk mendapatkan kredensial api,seperti token dan signature
+                  key yang akan digunakan untuk menggunakan service
+                  <span class="text-sky-400">Mayuni</span>.
+                </p>
+
+                <p class="mt-4">
+                  setelah kamu mendapatkan kredensial api nya,kamu bisa mencoba
+                  untuk membuat request transaksi melalui api menggunakan kode
+                  javascript simple seperti ini:
+                </p>
+
+                <pre
+                  class="mt-4 rounded-lg bg-black p-4 text-xs whitespace-pre-wrap text-white"
+                ><code class="language-javascript">
+let token = "you're token";
+let signature_key = "you're signature_key";
+let hostname = "https://api.mayuni.co.id";
+let path = "/transaction/create/qris";
+let merchant_ref = "TRX83453080";
+let amount = 10000;
+let expired_duration = 24;
+
+
+// Gunakan hexMD5 dari library Md5.js
+let signature = hexMD5(path + method + merchant_ref + amount + expired_duration + signature_key);
+
+let payload = {
+    method: "qris",
+    merchant_ref: merchant_ref,
+    amount: amount,
+    expired_duration: expired_duration,
+    customer_name: "customer name",
+    customer_phone: "085536495868",
+    customer_email: "customer@gmail.com",
+    signature: signature,
+    callback_url: "https://merchant.co.id/callback"
+};
+
+const fetchData = async () => {
+    try {
+        const res = await fetch(hostname + "/api/v1/mayuni-partner" + path, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "token": token
+            },
+            body: JSON.stringify(payload)
+        });
+
+        const data = await res.json(); 
+        console.log(data); 
+        return data;
+
+    } catch (error) {
+        console.error("Gagal:", error);
+        return error;
+    }
+};
+
+fetchData(); // panggil fungsi
+                  </code></pre>
+              </div>
+            </div>
+
+            <div
+              class="overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm sm:mt-32"
+            >
+              <div class="p-6">
+                <h3 class="text-lg font-semibold text-gray-800">
+                  Parameter Request Transaksi
+                </h3>
+                <p class="mt-1 text-sm text-gray-600">
+                  Berikut adalah detail parameter yang dibutuhkan untuk membuat
+                  request transaksi.
+                </p>
+                <dl class="mt-4 space-y-4">
+                  <div class="flex flex-col">
+                    <dt class="text-sm font-medium text-gray-700">method</dt>
+                    <dd class="mt-1 text-sm text-gray-500">
+                      Metode pembayaran yang digunakan, misalnya "qris".
+                    </dd>
+                  </div>
+                  <div class="flex flex-col">
+                    <dt class="text-sm font-medium text-gray-700">
+                      merchant_ref
+                    </dt>
+                    <dd class="mt-1 text-sm text-gray-500">
+                      ID transaksi unik yang Anda buat.
+                    </dd>
+                  </div>
+                  <div class="flex flex-col">
+                    <dt class="text-sm font-medium text-gray-700">amount</dt>
+                    <dd class="mt-1 text-sm text-gray-500">
+                      Nominal transaksi dalam satuan angka (contoh: 10000).
+                    </dd>
+                  </div>
+                  <div class="flex flex-col">
+                    <dt class="text-sm font-medium text-gray-700">
+                      expired_duration
+                    </dt>
+                    <dd class="mt-1 text-sm text-gray-500">
+                      Durasi kadaluarsa transaksi dalam satuan jam.
+                    </dd>
+                  </div>
+                  <div class="flex flex-col">
+                    <dt class="text-sm font-medium text-gray-700">
+                      customer_name
+                    </dt>
+                    <dd class="mt-1 text-sm text-gray-500">
+                      Nama lengkap pelanggan.
+                    </dd>
+                  </div>
+                  <div class="flex flex-col">
+                    <dt class="text-sm font-medium text-gray-700">
+                      customer_phone
+                    </dt>
+                    <dd class="mt-1 text-sm text-gray-500">
+                      Nomor telepon pelanggan.
+                    </dd>
+                  </div>
+                  <div class="flex flex-col">
+                    <dt class="text-sm font-medium text-gray-700">
+                      customer_email
+                    </dt>
+                    <dd class="mt-1 text-sm text-gray-500">
+                      Alamat email pelanggan.
+                    </dd>
+                  </div>
+                  <div class="flex flex-col">
+                    <dt class="text-sm font-medium text-gray-700">signature</dt>
+                    <dd class="mt-1 text-sm text-gray-500">
+                      Kombinasi hash MD5 dari beberapa parameter.
+                      <br />
+                      <span class="font-mono text-xs text-gray-600"
+                        >Formula: path + method + merchant_ref + amount +
+                        expired_duration + signature_key</span
+                      >
+                    </dd>
+                  </div>
+                  <div class="flex flex-col">
+                    <dt class="text-sm font-medium text-gray-700">
+                      callback_url
+                    </dt>
+                    <dd class="mt-1 text-sm text-gray-500">
+                      URL yang akan menerima notifikasi status transaksi
+                      (berhasil/gagal) dari Mayuni.
+                    </dd>
+                  </div>
+                  <div class="flex flex-col">
+                    <p class="text-sm font-medium text-gray-700">
+                      untuk dokumentasi lengkapnya cek di
+                      <a
+                        href="https://documenter.getpostman.com/view/9170561/2s9Y5Tzk2b#25a1d574-c9b5-4a4c-a622-8512edcbcf9f"
+                        class="text-sky-400 hover:underline"
+                        >dokumentasi mayuni</a
+                      >
+                    </p>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="rounded-lg border border-gray-200 bg-gray-50 p-4 sm:max-w-1/2"
+        >
+          <p class="mt-2 text-sm text-gray-600">
+            Untuk parameter penting seperti <strong>method</strong> dan
+            <strong>amount</strong>, aku menggunakan atribut `data-*` pada
+            elemen HTML untuk menyimpan nilainya dan mengambilnya menggunakan
+            javascript.
+          </p>
+          <ul
+            class="mt-4 list-inside list-disc space-y-2 text-sm text-gray-700"
+          >
+            <li>
+              <strong>Parameter `amount`:</strong> aku menambahkan harga
+              langsung pada voucher.
+              <br />
+              <code class="rounded bg-gray-200 px-1 py-0.5 font-mono text-xs"
+                >... data-amount="10000" ...</code
+              >
+            </li>
+            <li>
+              <strong>Parameter `method`:</strong> untuk method aku tempatkan
+              pada tombol pilihan pembayaran sesuai dengan tampilannya .
+              <br />
+              <code class="rounded bg-gray-200 px-1 py-0.5 font-mono text-xs"
+                >&lt;button data-method="qris"&gt;QRIS&lt;/button&gt;</code
+              >
+            </li>
+            <p>
+              <strong
+                >selebihnya bisa di sesuaikan dengan preferensi masing
+                masing</strong
+              >
+            </p>
+          </ul>
+        </div>
+      </section>
+
+      <!-- vps configuration -->
+      <section id="vpscuy">
+        <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+          <div class="space-y-4 md:space-y-8">
+            <div class="max-w-2xl">
+              <h2 class="text-2xl font-semibold text-gray-900 sm:text-3xl">
+                Konfigurasi VPS
+              </h2>
+              <p class="mt-4 text-gray-700">
+                pastikan vps sudah terhubung/satu jaringan dengan mikrotik,aku
+                menggunakan Node.js dan Docker untuk menjalankan library
+                <code class="rounded bg-gray-100 p-1 font-mono text-sm"
+                  >routerOS-client</code
+                >
+                dan Cloudflare Tunnel.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-medium text-gray-800">Langkah-langkah</h3>
+              <ol
+                class="mt-4 list-inside list-decimal space-y-6 text-gray-700 sm:max-w-1/2"
+              >
+                <li>
+                  <strong class="font-medium text-gray-800">Instalasi</strong
+                  ><br />
+                  Untuk menginstall Docker dan Node.js. kamu dapat mengikuti
+                  panduan instalasi dari web resminya dari sini :
+                  <ul class="mt-2 ml-5 list-inside list-disc space-y-1">
+                    <li>
+                      <a
+                        href="https://docs.docker.com/engine/install"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-sky-500 hover:underline"
+                        >Docker Docs</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://nodejs.org/en/download/current"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-green-500 hover:underline"
+                        >Node.js</a
+                      >
+                    </li>
+                  </ul>
+                  Tinggal copy paste doang kok
+                </li>
+                <li>
+                  <strong class="font-medium text-gray-800"
+                    >Inisialisasi project</strong
+                  ><br />
+                  Buat direktori baru untuk project, masuk ke directory, dan
+                  jalankan perintah berikut
+                  <div
+                    class="mt-2 overflow-x-auto rounded-lg bg-gray-900 p-3 font-mono text-sm text-white sm:max-w-1/2"
+                  >
+                    <code class="select-all">npm init -y</code>
+                  </div>
+                </li>
+                <li>
+                  <strong class="font-medium text-gray-800"
+                    >Instalasi Dependensi</strong
+                  ><br />
+                  Selanjutnya, install semua library yang dibutuhkan (<code
+                    class="rounded bg-gray-100 p-1 font-mono text-sm"
+                    >routerOS-client</code
+                  >,
+                  <code class="rounded bg-gray-100 p-1 font-mono text-sm"
+                    >cors</code
+                  >,<code class="rounded bg-gray-100 p-1 font-mono text-sm"
+                    >express</code
+                  >)
+                  <div
+                    class="mt-2 overflow-x-auto rounded-lg bg-gray-900 p-3 font-mono text-sm text-white sm:max-w-1/2"
+                  >
+                    <code class="select-all"
+                      >npm install routeros-client cors express --save</code
+                    >
+                  </div>
+                </li>
+                <li>
+                  <strong class="font-medium text-gray-800"
+                    >Buat File Server</strong
+                  ><br />
+                  Buat file JavaScript (misalnya,
+                  <code class="rounded bg-gray-100 p-1 font-mono text-sm"
+                    >server.js</code
+                  >) dan kamu bisa mencoba kode ini:
+                  <div class="mt-2 overflow-hidden rounded-lg sm:max-w-1/2">
+                    <pre
+                      class="overflow-x-auto bg-gray-900 p-4 text-xs text-white"
+                    ><code class="language-javascript select-all">const express = require('express');
+const RouterOSClient = require('routeros-client').RouterOSClient;
+const cors = require('cors');
+const app = express();
+const PORT = 3000;
+
+app.use(cors());
+app.use(express.json());
+
+// Konfigurasi koneksi ke Mikrotik
+const apiConfig = {
+    host: "10.10.10.1",
+    user: "api",
+    password: "api123"
+};
+
+// Endpoint untuk mendapatkan daftar user hotspot
+app.get('/api/users', async (req, res) => {
+    const api = new RouterOSClient(apiConfig);
+    try {
+        const client = await api.connect();
+        const users = await client.menu('/ip/hotspot/user').getAll();
+        await api.close();
+        res.json(users);
+    } catch (err) {
+        console.error("Error fetching users:", err);
+        res.status(500).json({ error: err.message || "Internal Server Error" });
+    }
+});
+
+app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
+});</code></pre>
+                  </div>
+                  <p class="mt-2 text-gray-600 sm:max-w-1/2 sm:text-sm">
+                    Kode di atas akan mengambil semua data user hotspot yang ada
+                    di mikrotik,lalu menaruhnya pada endpoint
+                    <code class="rounded bg-gray-100 p-1 font-mono text-xs"
+                      >/api/users</code
+                    >.
+                  </p>
+
+                  <div class="mt-2">
+                    kalian bisa menyesuaikan
+                    <code class="rounded bg-gray-100 p-1 font-mono text-sm"
+                      >apiConfig</code
+                    >dengan informasi login Mikrotik kalian.
+                  </div>
+                  <div class="mt-6 space-y-4 text-gray-700">
+                    <div>
+                      <strong class="font-medium text-gray-800"
+                        >Menjalankan & Menguji Server</strong
+                      ><br />
+                      Untuk menjalankan server, gunakan perintah berikut di
+                      terminal Anda:
+                      <div
+                        class="mt-2 overflow-x-auto rounded-lg bg-gray-900 p-3 font-mono text-sm text-white sm:max-w-1/2"
+                      >
+                        <code class="select-all">node server.js</code>
+                      </div>
+                      <p class="mt-2">
+                        Setelah server berjalan, Anda dapat menguji endpoint API
+                        dengan perintah `curl`:
+                      </p>
+                      <div
+                        class="mt-2 overflow-x-auto rounded-lg bg-gray-900 p-3 font-mono text-sm text-white sm:max-w-1/2"
+                      >
+                        <code class="select-all"
+                          >curl http://localhost:3000/api/users</code
+                        >
+                      </div>
+                    </div>
+
+                    <div class="sm:max-w-1/2">
+                      Ini hanya salah satu contoh penggunaan sederhananya,
+                      kalian bisa kustomisasi sesuai dengan kebutuhan
+                      kalian,seperti menambahkan header untuk keamanan atau
+                      apapun yang kalian inginkan. Untuk detailnya kalian bisa
+                      cek di
+                      <a
+                        href="https://github.com/aluisiora/routeros-client/wiki"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="font-bold hover:underline"
+                        >RouterOS Client Wiki</a
+                      >.
+                    </div>
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- docker configuration -->
+      <section id="docker">
+        <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
+          <div class="space-y-4 md:space-y-8">
+            <div class="max-w-xl">
+              <h2 class="text-2xl font-semibold text-gray-900 sm:text-3xl">
+                Konfigurasi docker container
+              </h2>
+
+              <p class="mt-2 text-gray-700">
+                untuk menjalankan containernya aku membuat 1 dockerfile dan
+                docker-compose untuk memudahkan proses build dan run nya:
+              </p>
+            </div>
+
+            <div>
+              <span class="font-semibold">Dockerfile:</span>
+              <pre
+                class="code-block rounded-2xl bg-black p-4 text-xs text-white sm:max-w-1/2"
+              ><code># node.js version
+FROM node:22-alpine
+# Set working directory
+WORKDIR /usr/app
+# Copy package.json
+COPY package*.json ./
+# Install dependencies
+RUN npm install --production
+# Copy the rest of the app
+COPY . .
+# Expose express default port
+EXPOSE 3000
+# Start the server
+CMD ["node", "server.js"]</code></pre>
+              <span class="font-semibold">Docker Compose:</span>
+              <pre
+                class="code-block rounded-2xl bg-black p-4 text-xs text-white sm:max-w-1/2"
+              ><code>version: '3.8'
+services:
+  mikrotikapp:
+    container_name: mikrotikapp
+    build:
+      context: .
+      dockerfile: dockerfile
+    ports:
+      - "3000:3000"
+    networks:
+      - mikrotiknetwork
+    restart: unless-stopped
+
+networks:
+  mikrotiknetwork:
+    name: mikrotiknetwork
+    driver: bridge</code></pre>
+            </div>
+            <div class="mt-4 space-y-3 text-gray-700 sm:max-w-1/2">
+              <p>
+                Dengan konfigurasi ini,
+                <code class="rounded bg-gray-200 px-1 font-mono text-sm"
+                  >Dockerfile</code
+                >
+                akan menyalin semua modul yang diperlukan dan menjalankan server
+                pada port 3000 di dalam container.
+              </p>
+              <p>
+                <code class="rounded bg-gray-200 px-1 font-mono text-sm"
+                  >docker-compose.yml</code
+                >
+                akan membuat kontainer bernama
+                <code class="rounded bg-gray-200 px-1 font-mono text-sm"
+                  >mikrotikapp</code
+                >
+                dan menggunakan port 3000, lalu menghubungkannya ke jaringan
+                <code class="rounded bg-gray-200 px-1 font-mono text-sm"
+                  >mikrotiknetwork</code
+                >.
+              </p>
+              <p>
+                Untuk memulainya, jalankan perintah: <br />
+                <code
+                  class="rounded bg-gray-900 px-2 py-1 font-mono text-sm text-white"
+                  >docker compose up -d</code
+                >.
+              </p>
+              <p>
+                tentu saja kalian bisa memodifikasinya sesuai dengan
+                keinginan/kebutuhan kalian <br />
+                <span class="font-mc-reg">if it works, it works</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- cloudflare tunnel -->
+      <section id="cloudflare">
+        <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
+          <div class="space-y-8">
+            <div>
+              <h2 class="text-3xl font-bold text-gray-900 sm:text-4xl">
+                Konfigurasi Cloudflare Tunnel
+              </h2>
+            </div>
+
+            <div class="grid grid-cols-1 gap-12 md:grid-cols-2 md:items-start">
+              <!-- Text content on the left -->
+              <div class="space-y-6">
+                <div>
+                  <h3 class="text-xl font-semibold text-gray-800">
+                    1. Buat Tunnel
+                  </h3>
+                  <p class="mt-2 text-gray-700">
+                    Login ke dasboard
+                    <a
+                      href="https://www.cloudflare.com/"
+                      class="text-orange-500 hover:underline"
+                      >Cloudflare</a
+                    >, navigasi ke menu <strong>Zero Trust</strong>, lalu pilih
+                    <strong>Networks > Tunnels</strong>.
+                  </p>
+                  <ol
+                    class="mt-2 ml-5 list-inside list-decimal space-y-1 text-gray-600"
+                  >
+                    <li>Klik <strong>Create a tunnel</strong>.</li>
+                    <li>Pilih tipe tunnel <strong>Cloudflared</strong>.</li>
+                    <li>Beri nama tunnel.</li>
+                    <li>
+                      Pilih environment yang digunakan. Karena aku menggunakan
+                      Docker, pilih <strong>Docker</strong>.
+                    </li>
+                    <li>
+                      copy perintah Docker yang diberikan dan jalankan di VPS ,
+                      lalu hubungkan ke jaringan yang sama dengan kontainer
+                      `mikrotikapp`.
+                    </li>
+                  </ol>
+                </div>
+
+                <div>
+                  <h3 class="text-xl font-semibold text-gray-800">
+                    2. Route Traffic
+                  </h3>
+                  <p class="mt-2 text-gray-700">
+                    Selanjutnya, konfigurasikan rute untuk tunnel Anda.
+                    Tambahkan domain publik (dan subdomain jika perlu), service
+                    <strong>HTTP</strong>, dan arahkan URL ke nama container
+                    beserta port yang digunakan (contoh: `mikrotikapp:3000`).
+                  </p>
+                </div>
+              </div>
+
+           
+              <div class="space-y-6">
+                <figure>
+                  <figcaption class="mb-2 text-sm font-medium text-gray-600">
+                    Tampilan instalasi dan menjalankan konektor:
+                  </figcaption>
+                  <img
+                    src="asset/img/tunnel1.png"
+                    class="w-full rounded-lg border border-gray-200 shadow-md"
+                    alt="Cloudflare Tunnel Connector Setup"
+                  />
+                </figure>
+                <figure>
+                  <figcaption class="mb-2 text-sm font-medium text-gray-600">
+                    Tampilan konfigurasi route traffic:
+                  </figcaption>
+                  <img
+                    src="asset/img/rtnl1.png"
+                    class="w-full rounded-lg border border-gray-200 shadow-md"
+                    alt="Cloudflare Tunnel Route Traffic"
+                  />
+                </figure>
+                <div>
+                  <p class="font-medium text-gray-800">
+                    Setelah semua konfigurasi selesai, data seharusnya sudah
+                    bisa diakses melalui nama domain dengan path yang telah
+                    dikonfigurasi,bahkan sudah otomatis HTTPS dari cloudflare
+                    nya.
+                  </p>
+                  <p class="text-sm">
+                    tentu saja kalian bisa memodifikasi/mengubah konfigurasinya
+                    sesuai dengan keinginan/kebutuhan kalian
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ssl certificate -->
+      <section class="bg-gray-50 pt-10" id="sslcertificate">
+        <div class="max-w-4xl rounded-lg bg-white p-4 sm:max-w-1/2">
+          <div class="space-y-6">
+            <!-- Header -->
+            <div class="">
+              <h2
+                class="text-xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+              >
+                Mendapatkan SSL Certificate
+              </h2>
+            </div>
+
+            <!-- Content -->
+            <div class="max-w-none pt-6 text-gray-700">
+              <p>
+                Untuk mendapatkan SSL certificate, aku menggunakan
+                <strong class="font-semibold">Certbot</strong> dengan plugin
+                <span class="font-semibold">
+                  "python3-certbot-dns-cloudflare"</span
+                >
+                yang diinstal di VPS dan
+                <strong class="font-semibold">API Token</strong> dari
+                Cloudflare.
+              </p>
+              <p>
+                <span class="font-semibold"> API Token</span> dapat dibuat di
+                dasboard Cloudflare. ke menu
+                <code class="rounded bg-gray-200 px-2 py-1 font-mono text-sm"
+                  >Manage Account > API Tokens</code
+                >, lalu pilih "Create Token". Gunakan template "Edit zone DNS"
+                dan arahkan ke domain kalian.
+              </p>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="pt-2">
+              <p class="text-base text-gray-600">
+                Untuk panduan yang lebih lengkap, cek di dokumentasi resmi:
+              </p>
+              <a
+                href="https://certbot-dns-cloudflare.readthedocs.io/en/stable/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mt-4 font-bold text-sky-500 hover:underline"
+              >
+                Certbot DNS Cloudflare
+              </a>
+            </div>
+
+            <p class="text-xs">
+              atau jika kalian memiliki cara lain untuk mendapatkan certificate
+              nya juga ok ok saja <br />
+              <span class="font-mc-reg text-xs">if it works it works</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- konfigurasi mikrotik -->
+      <section id="mikrotik" class="py-10">
+        <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+          <div class="">
+            <h2
+              class="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl"
+            >
+              Konfigurasi Mikrotik
+            </h2>
+          </div>
+
+          <div
+            class="mt-4 grid grid-cols-1 gap-8 md:grid-cols-2 lg:mt-12 lg:gap-12"
+          >
+            <!-- SSL/DNS Hotspot Card -->
+            <div class="flex flex-col bg-white p-6">
+              <h3 class="text-xl font-semibold text-gray-800">
+                SSL & DNS Hotspot
+              </h3>
+
+              <ol class="mt-4 flex-grow text-gray-700">
+                <li>
+                  Impor sertifikat yang didapat sebelumnya dengan
+                  <i>drag-and-drop</i> ke file mikrotik,lalu ke menu
+                  <code class="rounded bg-gray-200 px-2 py-1 font-mono text-sm"
+                    >System > Certificates</code
+                  >, lalu klik <strong>Import</strong>.
+                </li>
+                <li>
+                  Aktifkan layanan SSL di
+                  <code class="rounded bg-gray-200 px-2 py-1 font-mono text-sm"
+                    >IP > Services</code
+                  >, pilih <strong>www-ssl</strong>, dan pasang dengan
+                  sertifikat sebelumnya.
+                </li>
+                <li>
+                  Buka
+                  <code class="rounded bg-gray-200 px-2 py-1 font-mono text-sm"
+                    >IP > Hotspot > Server Profiles</code
+                  >, pilih profil, dan isi
+                  <strong class="font-medium">DNS Name</strong> dengan domain
+                  kalian.
+                </li>
+                <li>
+                  Di tab <strong>Login</strong>, centang
+                  <strong class="font-medium">Login By HTTPS</strong> dan isi
+                  <strong class="font-medium">SSL Certificate</strong> yang
+                  sesuai.
+                </li>
+              </ol>
+            </div>
+
+            <!-- Walled Garden Card -->
+            <div class="flex flex-col bg-white p-6">
+              <h3 class="text-xl font-semibold text-gray-800">
+                Walled Garden Bypass
+              </h3>
+
+              <div class="mt-4 flex-grow space-y-3 text-gray-700">
+                <p>
+                  Gunakan fitur <strong>Walled Garden</strong> supaya tetap bisa
+                  akses ke domain VPS sebelum user login hotspot.
+                </p>
+                <p>
+                  Tambahkan wallet garden baru di
+                  <code class="rounded bg-gray-200 px-2 py-1 font-mono text-sm"
+                    >IP > Hotspot > Walled Garden</code
+                  >
+                  dengan parameter berikut:
+                </p>
+                <ul class="list-inside list-disc space-y-2 pl-2">
+                  <li>
+                    <strong class="font-medium">Action:</strong>
+                    <code
+                      class="rounded bg-gray-200 px-2 py-1 font-mono text-sm"
+                      >allow</code
+                    >
+                  </li>
+                  <li>
+                    <strong class="font-medium">Dst. Host:</strong>
+                    <code
+                      class="rounded bg-gray-200 px-2 py-1 font-mono text-sm"
+                      >namadomainvps.net</code
+                    >
+                  </li>
+                </ul>
+                <p class="text-sm text-gray-500">
+                  *Ganti `namadomainvps.net` dengan nama domain publik VPS Anda.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="asset/lib/flowbite.min.js"></script>
+    <script src="asset/js/page.js"></script>
+  </body>
+</html>
