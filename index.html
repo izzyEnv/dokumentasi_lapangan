@@ -97,11 +97,17 @@
               href="#mayuni"
               class="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
             >
-              <svg   fill="currentColor"
+              <svg
+                fill="currentColor"
                 aria-hidden="true"
-                class="h-7 w-7 shrink-0 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 260">
-  <path d="M20,240V80H50V200L100,130H120L170,200V80H200V240H170V140L120,210H100L50,140V240Z"/>
-</svg>
+                class="h-7 w-7 shrink-0 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 260 260"
+              >
+                <path
+                  d="M20,240V80H50V200L100,130H120L170,200V80H200V240H170V140L120,210H100L50,140V240Z"
+                />
+              </svg>
 
               <span class="ms-3 flex-1 whitespace-nowrap"
                 >Integrasi Mayuni</span
@@ -224,7 +230,7 @@
     <!-- end -->
 
     <!-- open -->
-    <div class="transition-all duration-300 sm:ml-64">
+    <div class="bg-white transition-all duration-300 sm:ml-64">
       <!-- pembungkus untuk memisahkan section sidebar -->
       <div id="main-content-wrapper">
         <!-- judul -->
@@ -243,6 +249,68 @@
               class="mx-auto mb-2 w-20"
             />
           </a>
+        </section>
+
+        <!-- table of content -->
+        <section aria-labelledby="toc-title">
+          <div class="mx-auto max-w-screen-xl px-4 py-6 sm:px-6 lg:px-8">
+            <div class="overflow-hidden rounded-lg bg-white shadow-lg">
+              <div class="p-6">
+                <h2
+                  id="toc-title"
+                  class="text-xl font-semibold text-gray-900 sm:text-2xl"
+                >
+                  Daftar Isi
+                </h2>
+                <ul
+                  class="mt-4 list-outside list-disc space-y-2 pl-6 text-gray-700 marker:text-gray-900"
+                >
+                  <li>
+                    <a href="#about" class="text-sky-600 hover:underline"
+                      >Tentang Proyek</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#loginpage" class="text-sky-600 hover:underline"
+                      >Custom Loginpage</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#mayuni" class="text-sky-600 hover:underline"
+                      >Integrasi Mayuni</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#vpscuy" class="text-sky-600 hover:underline"
+                      >Konfigurasi VPS</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#docker" class="text-sky-600 hover:underline"
+                      >Docker Container</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#cloudflare" class="text-sky-600 hover:underline"
+                      >Cloudflare Tunnel</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#sslcertificate"
+                      class="text-sky-600 hover:underline"
+                      >SSL Certificate</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#mikrotik" class="text-sky-600 hover:underline"
+                      >Mikrotik Config</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section id="about">
@@ -292,43 +360,46 @@
             </div>
           </div>
         </section>
+      </div>
 
-        <!-- <section>
+      <section>
         <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
           <div
             class="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8"
           >
             <div>
               <div class="max-w-lg md:max-w-none">
-                <h3 class="mb-2 font-mc-reg text-xl text-blue-500">
-                  mulai dari mana ya?
-                </h3>
-                <h2 class="text-2xl font-semibold text-gray-900 sm:text-3xl">
-                  mungkin mulai dari Topologinya Dulu
+                <h2 class="text-xl font-semibold text-blue-500 sm:text-3xl">
+                  flow project
                 </h2>
-                <h3 class="mt-5 font-mc-reg">
-                  sederhananya seperti ini gambaran nya
-                </h3>
-
-                <p class="text-base text-gray-700 md:text-lg">
-                  jadi kita punya Router Mikrotik yang terhubung dengan VPS Ubuntu yang digunakan untuk mengambil data-data yang ada di mikrotik melalui api mikrotik menggunakan routerOS-client yang berjalan di docker dan service cloudflare yang digunakan untuk tunnel vps nya supaya bisa di akses di internet
+                <p class="mt-4 text-gray-700">
+                  saat pengguna terhubung ke hotspot Mikrotik dan diarahkan ke
+                  halaman login. Pengguna memilih paket, membayar via payment
+                  gateway
+                  <span class="font-semibold text-sky-400">Mayuni</span>, dan
+                  setelah berhasil, server akan memberikan voucher melalui API
+                  Mikrotik untuk memberikan akses internet.
                 </p>
-
-                <p></p>
+                <p class="mt-2 text-gray-700">
+                  mungkin seperti ini gambarannya:
+                </p>
               </div>
             </div>
 
             <div>
-              <img src="/asset/img/uyfytui.jpg" class="rounded-2xl" alt="" />
+              <img
+                src="asset/img/gambaran.png"
+                class="w-full max-w-lg rounded"
+                alt=""
+              />
             </div>
           </div>
         </div>
-      </section> -->
-      </div>
+      </section>
 
       <!-- custom loginpage -->
       <section id="loginpage">
-        <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
+        <div class="mx-auto mt-10 max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
           <div
             class="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8"
           >
@@ -337,7 +408,7 @@
                 <h1 class="text-xl font-semibold text-gray-900 sm:text-xl">
                   Membuat custom loginpage hotspot mikrotik
                 </h1>
-                <h2 class="mt-10 font-semibold text-gray-900 sm:text-xl">
+                <h2 class="mt-6 text-gray-900 sm:text-lg">
                   langkah pertama tentu saja membuat halaman loginpage hotspot
                   custom dengan tambahan tampilan untuk membeli voucher internet
                   dan untuk memilih metode pembayaran yang nanti akan di
@@ -404,10 +475,16 @@ let path = "/transaction/create/qris";
 let merchant_ref = "TRX83453080";
 let amount = 10000;
 let expired_duration = 24;
+let method = "POST";
 
 
-// Gunakan hexMD5 dari library Md5.js
-let signature = hexMD5(path + method + merchant_ref + amount + expired_duration + signature_key);
+const crypto = require("crypto");
+function md5(s) {
+  return crypto.createHash("md5").update(s)
+  .digest("hex");
+}
+
+let signature = md5(path + method + merchant_ref + amount + expired_duration + signature_key);
 
 let payload = {
     method: "qris",
@@ -730,7 +807,7 @@ app.listen(PORT, () => {
                   <div class="mt-6 space-y-4 text-gray-700">
                     <div>
                       <strong class="font-medium text-gray-800"
-                        >Menjalankan & Menguji Server</strong
+                        >5. Menjalankan & Menguji Server</strong
                       ><br />
                       Untuk menjalankan server, gunakan perintah berikut di
                       terminal Anda:
@@ -924,7 +1001,6 @@ networks:
                 </div>
               </div>
 
-           
               <div class="space-y-6">
                 <figure>
                   <figcaption class="mb-2 text-sm font-medium text-gray-600">
@@ -953,7 +1029,7 @@ networks:
                     dikonfigurasi,bahkan sudah otomatis HTTPS dari cloudflare
                     nya.
                   </p>
-                  <p class="text-sm">
+                  <p class="mt-3 text-sm">
                     tentu saja kalian bisa memodifikasi/mengubah konfigurasinya
                     sesuai dengan keinginan/kebutuhan kalian
                   </p>
@@ -964,9 +1040,8 @@ networks:
         </div>
       </section>
 
-
       <!-- ssl certificate -->
-      <section class="bg-gray-50 pt-10" id="sslcertificate">
+      <section class="pt-10" id="sslcertificate">
         <div class="max-w-4xl rounded-lg bg-white p-4 sm:max-w-1/2">
           <div class="space-y-6">
             <!-- Header -->
@@ -990,7 +1065,8 @@ networks:
                 <strong class="font-semibold">API Token</strong> dari
                 Cloudflare.
               </p>
-              <p>
+
+              <p class="mt-4">
                 <span class="font-semibold"> API Token</span> dapat dibuat di
                 dasboard Cloudflare. ke menu
                 <code class="rounded bg-gray-200 px-2 py-1 font-mono text-sm"
@@ -1001,21 +1077,100 @@ networks:
             </div>
 
             <!-- Call to Action -->
-            <div class="pt-2">
-              <p class="text-base text-gray-600">
-                Untuk panduan yang lebih lengkap, cek di dokumentasi resmi:
-              </p>
-              <a
-                href="https://certbot-dns-cloudflare.readthedocs.io/en/stable/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="mt-4 font-bold text-sky-500 hover:underline"
+            <div class="mt-4 space-y-4">
+              <h3 class="text-lg font-semibold text-gray-800">
+                Langkah-langkah :
+              </h3>
+              <ol class="list-decimal space-y-4 pl-5 text-gray-700">
+                <li>
+                  <p>Masuk ke terminal VPS.</p>
+                </li>
+                <li>
+                  <p>Instalasi Certbot:</p>
+                  <pre
+                    class="mt-2 overflow-x-auto rounded-xl bg-black p-3 font-mono text-sm text-white"
+                  >
+sudo apt install certbot python3-pip -y</pre
+                  >
+                </li>
+                <li>
+                  <p>Install plugin Cloudflare:</p>
+                  <pre
+                    class="mt-2 overflow-x-auto rounded-xl bg-black p-3 font-mono text-sm text-white"
+                  >
+sudo apt install python3-certbot-dns-cloudflare -y</pre
+                  >
+                </li>
+                <li>
+                  <p>Buat folder dan file untuk menyimpan token Cloudflare:</p>
+                  <pre
+                    class="mt-2 overflow-x-auto rounded-xl bg-black p-3 font-mono text-sm text-white"
+                  >
+mkdir -p ~/.secrets
+nano ~/.secrets/cloudflare.ini</pre
+                  >
+                </li>
+                <li>
+                  <p>Isi file seperti ini:</p>
+                  <pre
+                    class="mt-2 overflow-x-auto rounded-xl bg-black p-3 font-mono text-sm text-white"
+                  >
+dns_cloudflare_api_token = TOKEN_CLOUDFLARE</pre
+                  >
+                </li>
+                <li>
+                  <p>Lalu simpan dan atur permission file:</p>
+                  <pre
+                    class="mt-2 overflow-x-auto rounded-xl bg-black p-3 font-mono text-sm text-white"
+                  >
+chmod 600 ~/.secrets/cloudflare.ini</pre
+                  >
+                </li>
+                <li>
+                  <p>Request certificate:</p>
+                  <pre
+                    class="mt-2 overflow-x-auto rounded-xl bg-black p-3 font-mono text-sm text-white"
+                  >
+sudo certbot certonly \
+  --dns-cloudflare \
+  --dns-cloudflare-credentials ~/.secrets/cloudflare.ini \
+  -d yourdomain.net -d www.yourdomain.net \
+  --preferred-challenges dns-01</pre
+                  >
+                </li>
+                <li>
+                  <p>Renewal certificate otomatis :</p>
+                  <pre
+                    class="mt-2 overflow-x-auto rounded-xl bg-black p-3 font-mono text-sm text-white"
+                  >
+sudo certbot renew --dry-run</pre
+                  >
+                </li>
+              </ol>
+              <p>setelah itu kamu akan mendapatkan certificate nya di</p>
+              <span class="mt-0 rounded bg-gray-200 px-2 py-1 font-mono"
+                >/etc/letsencrypt/live/yourdomain.net</span
               >
-                Certbot DNS Cloudflare
-              </a>
+              <p class="mt-3">
+                seperti
+                <span class="p rounded bg-gray-200 px-2 font-mono"
+                  >fullchain.pem dan privkey.pem</span
+                >
+              </p>
+              <p class="mt-6">
+                untuk dokumentasi lengkapnya bisa cek di:
+                <a
+                  href="https://certbot-dns-cloudflare.readthedocs.io/en/stable/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="mt-0 inline-block font-bold text-sky-500 hover:underline"
+                >
+                  Certbot DNS Cloudflare
+                </a>
+              </p>
             </div>
 
-            <p class="text-xs">
+            <p class="text-sm">
               atau jika kalian memiliki cara lain untuk mendapatkan certificate
               nya juga ok ok saja <br />
               <span class="font-mc-reg text-xs">if it works it works</span>
@@ -1044,34 +1199,30 @@ networks:
                 SSL & DNS Hotspot
               </h3>
 
-              <ol class="mt-4 flex-grow text-gray-700">
+              <ol class="mt-4 space-y-4 text-gray-700">
                 <li>
-                  Impor sertifikat yang didapat sebelumnya dengan
-                  <i>drag-and-drop</i> ke file mikrotik,lalu ke menu
-                  <code class="rounded bg-gray-200 px-2 py-1 font-mono text-sm"
-                    >System > Certificates</code
-                  >, lalu klik <strong>Import</strong>.
+                  <p>
+                    1. salin file certificate fullchain.pem yang sudah didapat
+                    sebelumnya ke MikroTik (via Winbox).:
+                  </p>
+                </li>
+
+                <li>
+                  <p>Import certificate di MikroTik:</p>
+                  <pre
+                    class="mt-2 overflow-x-auto rounded-xl bg-black p-3 font-mono text-sm text-white"
+                  >
+/certificate import file-name=fullchain.pem</pre
+                  >
                 </li>
                 <li>
-                  Aktifkan layanan SSL di
-                  <code class="rounded bg-gray-200 px-2 py-1 font-mono text-sm"
-                    >IP > Services</code
-                  >, pilih <strong>www-ssl</strong>, dan pasang dengan
-                  sertifikat sebelumnya.
-                </li>
-                <li>
-                  Buka
-                  <code class="rounded bg-gray-200 px-2 py-1 font-mono text-sm"
-                    >IP > Hotspot > Server Profiles</code
-                  >, pilih profil, dan isi
-                  <strong class="font-medium">DNS Name</strong> dengan domain
-                  kalian.
-                </li>
-                <li>
-                  Di tab <strong>Login</strong>, centang
-                  <strong class="font-medium">Login By HTTPS</strong> dan isi
-                  <strong class="font-medium">SSL Certificate</strong> yang
-                  sesuai.
+                  <p>Aktifkan SSL untuk mengaktifkan HTTPS di Hotspot:</p>
+                  <pre
+                    class="mt-2 overflow-x-auto rounded-xl bg-black p-3 font-mono text-sm text-white"
+                  >
+/ip service set www-ssl certificate=fullchain.pem disabled=no
+/ip hotspot profile set [find where name="(nama_profile)"] login-by=https ssl-certificate=fullchain.pem</pre
+                  >
                 </li>
               </ol>
             </div>
@@ -1111,10 +1262,217 @@ networks:
                   </li>
                 </ul>
                 <p class="text-sm text-gray-500">
-                  *Ganti `namadomainvps.net` dengan nama domain publik VPS Anda.
+                  *Ganti `namadomainvps.net` dengan nama domain publik VPS.
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- opsi/cara lain -->
+      <section class="py-12 sm:max-w-1/2">
+        <div class="px-4 sm:px-6 lg:px-8">
+          <div class="rounded-lg bg-white p-8">
+            <h2 class="mb-6 text-left text-2xl font-bold text-gray-800">
+              cara lain, Konfigurasi Domain dengan Nginx(opsional)
+            </h2>
+            <p class="mb-8 text-left text-lg text-gray-700">
+              Selain menggunakan Cloudflare, sebenarnya bisa juga menggunakan
+              Nginx untuk mengatur domain secara local.
+            </p>
+
+            <div class="space-y-6">
+              <div>
+                <h3 class="mb-2 text-xl font-semibold text-gray-800">
+                  1. Instalasi Nginx
+                </h3>
+                <p class="mb-2 text-gray-700">
+                  Pastikan Nginx sudah terinstal di vps. Jika belum, gunakan
+                  perintah berikut:
+                </p>
+                <pre
+                  class="overflow-x-auto rounded-lg bg-black p-4 font-mono text-sm text-white"
+                ><code>sudo apt update
+sudo apt install nginx</code></pre>
+              </div>
+
+              <div>
+                <h3 class="mb-2 text-xl font-semibold text-gray-800">
+                  2. Buat File Konfigurasi Server
+                </h3>
+                <p class="mb-2 text-gray-700">
+                  Buat file konfigurasi baru di direktori
+                  <code class="rounded bg-gray-200 px-1 text-sm"
+                    >/etc/nginx/sites-available/</code
+                  >:
+                </p>
+                <pre
+                  class="overflow-x-auto rounded-lg bg-black p-4 font-mono text-sm text-white"
+                ><code>sudo nano /etc/nginx/sites-available/namafile</code></pre>
+              </div>
+
+              <div>
+                <h3 class="mb-2 text-xl font-semibold text-gray-800">
+                  3. Konfigurasi nginx
+                </h3>
+                <p class="mb-2 text-gray-700">
+                  Tambahkan konfigurasi berikut ke dalam file tersebut,
+                  sesuaikan
+                  <code class="rounded bg-gray-200 px-1 text-sm"
+                    >namadomain.com</code
+                  >
+                  dan proxy_pass yang sesuai dengan port service yang berjalan
+                </p>
+                <pre
+                  class="overflow-x-auto rounded-lg bg-black p-4 font-mono text-sm text-white"
+                ><code>server {
+    listen 80;
+    server_name namadomain.com www.namadomain.com;
+    return 301 https://$host$request_uri;
+}
+
+server {
+    listen 443 ssl;
+    server_name namadomain.com ;
+
+    ssl_certificate /path/ke/file/fullchain.pem;
+    ssl_certificate_key /path/ke/file/privkey.pem;
+
+    location / {
+        proxy_pass http://localhost:3000;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}</code></pre>
+              </div>
+
+              <div>
+                <h3 class="mb-2 text-xl font-semibold text-gray-800">
+                  4. Aktifkan Konfigurasi dan Restart Nginx
+                </h3>
+                <p class="mb-2 text-gray-700">
+                  Buat symbolic link untuk mengaktifkan konfigurasi, lalu
+                  restart Nginx agar perubahan diterapkan:
+                </p>
+                <pre
+                  class="overflow-x-auto rounded-lg bg-black p-4 font-mono text-sm text-white"
+                ><code>sudo ln -s /etc/nginx/sites-available/namafile /etc/nginx/sites-enabled/
+sudo nginx -t
+sudo systemctl restart nginx</code></pre>
+              </div>
+            </div>
+
+            <div class="mt-8 text-left text-gray-600">
+              <p>
+                Setelah itu,kita perlu menambahkan sedikit konfigurasi di
+                MikroTik.
+              </p>
+            </div>
+
+            <div class="mt-6 rounded-lg p-6">
+              <h3 class="text-lg font-semibold text-gray-800">
+                Konfigurasi DNS
+              </h3>
+              <p class="mt-2 text-gray-700">
+                Kita perlu menambahkan DNS static di MikroTik agar domain dapat
+                resolve ke VPS:
+              </p>
+              <ol class="mt-4 list-inside list-decimal space-y-2 text-gray-700">
+                <li>
+                  Buka menu
+                  <code class="rounded bg-gray-200 px-1 text-sm">IP > DNS</code
+                  >, lalu pilih
+                  <code class="rounded bg-gray-200 px-1 text-sm">Static</code>.
+                </li>
+                <li>
+                  Klik tombol
+                  <code class="rounded bg-blue-500 px-2 py-1 text-sm text-white"
+                    >+</code
+                  >
+                  (Tambah) untuk membuat static DNS baru.
+                </li>
+                <li>
+                  Isi parameter berikut:
+                  <ul class="mt-2 ml-4 list-inside list-disc space-y-1">
+                    <li>
+                      <strong class="font-semibold">Name:</strong> Masukkan nama
+                      domain yang Anda gunakan di VPS (misalnya,
+                      <code class="rounded bg-gray-200 px-1 text-sm"
+                        >yourdomain.net</code
+                      >).
+                    </li>
+                    <li>
+                      <strong class="font-semibold">Address:</strong> Masukkan
+                      IP VPS.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Klik
+                  <code class="rounded bg-blue-500 px-2 py-1 text-sm text-white"
+                    >OK</code
+                  >
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-white py-12">
+        <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+          <div class="rounded-lg p-8 shadow-lg">
+            <p class="mt-4 text-gray-600">
+              sebenarnya proyek ini dapat disederhanakan seperti ini:
+            </p>
+            <ol class="mt-6 list-inside list-decimal space-y-1 text-gray-700">
+              <li>
+                <strong class="font-medium text-gray-900"
+                  >Membuat Custom Login Page</strong
+                >
+              </li>
+              <li>
+                <strong class="font-medium text-gray-900"
+                  >Integrasi Mayuni</strong
+                >
+              </li>
+              <li>
+                <strong class="font-medium text-gray-900"
+                  >Konfigurasi VPS</strong
+                >
+              </li>
+              <li>
+                <strong class="font-medium text-gray-900"
+                  >SSL Certificate</strong
+                >
+              </li>
+              <li>
+                <strong class="font-medium text-gray-900"
+                  >Konfigurasi Mikrotik</strong
+                >
+              </li>
+              <li>
+                <strong class="font-medium text-gray-900"
+                  >Konfigurasi Nginx</strong
+                >
+              </li>
+            </ol>
+            <p class="mt-6 text-gray-600">
+              <strong class="font-semibold text-gray-800">Opsional:</strong>
+              Untuk penggunaan Docker container aslinya opsional saja.jika
+              server dijalankan di container, gunakan cloudflare tunnel, dan
+              tidak perlu pake Nginx. Jika server dijalankan langsung di
+              VPS,tidak perlu cloudflare tunnel, dan gunakan Nginx, untuk
+              tambahannya bisa gunakan tools seperti
+              <code class="rounded bg-gray-200 px-2 py-1 font-mono text-sm"
+                >PM2</code
+              >
+              untuk memastikan server tetap berjalan secara otomatis jika
+              terjadi gangguan/server mati.
+            </p>
           </div>
         </div>
       </section>

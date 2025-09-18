@@ -17,3 +17,7 @@
         // Also update on window resize
         window.addEventListener('resize', updateContentMargin);
       });
+
+//       if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+//   document.documentElement.classList.remove('dark');
+// }
